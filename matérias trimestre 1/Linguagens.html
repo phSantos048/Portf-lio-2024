@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Matérias_1.css">
+
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza horizontalmente */
+            gap: 20px;
+        }
+
+        .card {
+            width: calc(33.33% - 40px);
+            margin-bottom: 20px;
+            background-color: #2c303a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 200ms;
+            cursor: pointer;
+            display: flex; /* Para centralizar verticalmente */
+            flex-direction: column; /* Para centralizar verticalmente */
+            justify-content: center; /* Para centralizar verticalmente */
+            align-items: center; /* Para centralizar verticalmente */
+        }
+
+        .card img {
+            width: 150px; /* Largura da imagem retangular */
+            height: 100px; /* Altura da imagem retangular */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        /* Estilo do botão de voltar */
+        #voltar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #voltar button {
+            background-color: #808080; /* Cor cinza */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #voltar button:hover {
+            background-color: #a9a9a9; /* Cor mais clara ao passar o mouse */
+        }
+    </style>
+
+    <title>Atividade</title>
+</head>
+<body>
+    <h1>Atividades De Linguagens</h1>
+    <div class="container">
+        <!-- hidden action -->
+        <input id="more" type="checkbox">
+    
+        <!-- visible content -->
+        <div class="cards">
+            <!-- Cards 1 to 6 -->
+            <div class="card">
+                <img src="atividade pré modernismo linguagens.PNG" alt="Imagem da Atividade 1">
+                <p>Assunto: Pré-Modernismo.</p>
+                <p>Objetivo: Criar uma apresentação sobre o Pré-Modernismo, Contexto sócio-histórico da época uma breve biografia do autor elementos da narrativa da obra foco narrativo.  Narrador; Espaço; Tempo;
+                    Personagens; Enredo; Trechos da
+                    obra, e uma análise das temáticas abordadas na obra e sua relação com o contexto
+                    atual.</p> 
+                    <p><a href="https://www.canva.com/design/DAF-LYZ73C8/R4g2gJ6ZAEne4eoIpzOp4Q/edit?utm_content=DAF-LYZ73C8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+                        ">Link da Atividade</a></p>
+                <p>Competências e habilidades: H3, H4, H22 e H24
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="Atividade Simple Past Verb to be.PNG" alt="Imagem da Atividade 2">
+                <p>Assunto: Microfiction and the use of Simple Past</p>
+                <p>Objetivo: Discussão inicial e explicação sobre o tempo verbal simple past e seu uso em narrativas a produção de um microfiction utilizando o simple past.  o grupo criou e colou a imagem fornecida pela professora na cartolina e ilustrou como se a cartolina fosse uma postagem nas redes sociais.</p>
+                <p>Competências e habilidades: H11, H25, H10 e H24</p>
+            </div>
+
+            <div class="card">
+                <p>Assunto: Revista Literária</p>
+                <p>Status: Em Construção</p>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Botão de voltar -->
+    <section id="voltar">
+        <button onclick="voltarParaTrimestre1()">Voltar para 1° Trimestre</button>
+    </section>
+
+    <script>
+        function voltarParaTrimestre1() {
+            window.location.href = '../trimestres/trimestre 1.html';
+        }
+    </script>
+</body>
+</html>
